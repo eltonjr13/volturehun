@@ -12,7 +12,7 @@ const navItems = [
 
 export default function DockNav() {
   return (
-    <nav className="fixed bottom-5 left-1/2 z-50 flex -translate-x-1/2 items-center justify-center gap-4 rounded-2xl border border-white/10 bg-black/70 px-4 py-2 shadow-xl backdrop-blur-md md:hidden">
+    <nav className="fixed bottom-5 left-1/2 z-50 flex -translate-x-1/2 items-center justify-center gap-4 rounded-full border border-white/10 bg-black/70 px-4 py-2 shadow-xl backdrop-blur-md md:hidden">
       {navItems.map((item) => (
         <Link
           key={item.href}

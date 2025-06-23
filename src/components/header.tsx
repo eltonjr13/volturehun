@@ -12,22 +12,20 @@ const navItems = [
 
 export default function DockNav() {
   return (
-    <nav className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 rounded-full border border-white/10 bg-neutral-900/70 px-6 py-3 shadow-lg backdrop-blur-md">
-      <div className="flex items-center gap-x-8">
-        {navItems.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className={cn(
-              'flex flex-col items-center gap-1 text-xs text-neutral-400 transition-colors hover:text-accent',
-            )}
-            aria-label={item.label}
-          >
-            <item.icon className="h-5 w-5" />
-            <span className="hidden sm:inline">{item.label}</span>
-          </Link>
-        ))}
-      </div>
+    <nav className="fixed bottom-5 left-1/2 z-50 flex -translate-x-1/2 items-center justify-center gap-8 rounded-2xl border border-white/10 bg-black/70 px-6 py-3 shadow-xl backdrop-blur-md md:hidden">
+      {navItems.map((item) => (
+        <Link
+          key={item.href}
+          href={item.href}
+          className={cn(
+            'flex flex-col items-center gap-1 text-xs text-neutral-300 transition-all hover:scale-105 hover:text-accent',
+          )}
+          aria-label={item.label}
+        >
+          <item.icon className="h-5 w-5" />
+          <span>{item.label}</span>
+        </Link>
+      ))}
     </nav>
   );
 }

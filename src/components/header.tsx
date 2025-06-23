@@ -38,7 +38,7 @@ export default function Header() {
 
   return (
     <header className={cn(
-        "fixed top-5 left-1/2 z-50 flex -translate-x-1/2 items-center justify-center gap-2 rounded-full border border-white/10 bg-black/70 p-2 shadow-xl backdrop-blur-md transition-transform duration-300 ease-in-out",
+        "fixed top-5 left-1/2 z-50 flex -translate-x-1/2 items-center justify-center gap-4 rounded-2xl border border-white/10 bg-black/60 p-1 shadow-md backdrop-blur-sm transition-transform duration-300 ease-in-out",
         isVisible ? "translate-y-0" : "-translate-y-24"
       )}>
       {navItems.map((item) => (
@@ -46,7 +46,7 @@ export default function Header() {
           key={item.href}
           href={item.href}
           className={cn(
-            'flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-neutral-300 transition-colors hover:bg-white/10 hover:text-accent',
+            'flex items-center gap-2 rounded-xl px-3 py-1 text-sm font-medium text-neutral-300 transition-colors hover:bg-white/10 hover:text-accent',
           )}
           aria-label={item.label}
         >

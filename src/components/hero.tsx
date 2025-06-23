@@ -1,7 +1,18 @@
+'use client';
+
 import { GradientButton } from "@/components/ui/gradient-button";
 import Link from "next/link";
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Hero = () => {
+  const [text] = useTypewriter({
+    words: ['autoridade digital', 'clínica desejada', 'marca confiável', 'referência online', 'presença imbatível'],
+    loop: 0, // Loop infinitely
+    typeSpeed: 120,
+    deleteSpeed: 80,
+    delaySpeed: 2000,
+  });
+
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       <div 
@@ -20,7 +31,8 @@ const Hero = () => {
         <h1 className="font-headline text-5xl font-bold tracking-tight text-primary sm:text-6xl md:text-7xl lg:text-8xl">
           Transforme sua clínica em
           <br className="md:hidden" />
-          <span className="font-code text-accent"> referência online</span>
+          <span className="font-code text-accent"> {text}</span>
+          <Cursor cursorStyle='_' />
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-primary/80 md:text-xl">
           Criamos sites elegantes, rápidos e otimizados que aumentam a confiança dos pacientes e destacam sua autoridade no setor da saúde.

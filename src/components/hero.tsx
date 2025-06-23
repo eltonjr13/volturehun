@@ -4,7 +4,13 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)',
+        }}
+      >
         <div className="absolute -top-20 -left-20 w-96 h-96 bg-purple-glow/30 rounded-full filter blur-2xl animate-blob-1 opacity-60"></div>
         <div className="absolute -bottom-20 -right-10 w-96 h-96 bg-orange-glow/30 rounded-full filter blur-2xl animate-blob-2 opacity-60"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-glow/20 rounded-full filter blur-xl animate-blob-3 opacity-50"></div>

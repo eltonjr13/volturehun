@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Volture Hub: Digital Presence Elevated',
-  description: "A portfolio-style homepage that highlights the agency's completed web projects and emphasizes the value of having a well-built and trusted digital presence.",
+  title: 'Volture Hub: Presença Digital Elevada',
+  description: "Uma página inicial estilo portfólio que destaca os projetos web concluídos da agência e enfatiza o valor de ter uma presença digital bem construída e confiável.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark !scroll-smooth">
+    <html lang="pt-br" className="dark !scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

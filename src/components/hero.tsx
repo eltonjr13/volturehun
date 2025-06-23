@@ -12,16 +12,16 @@ const Hero = () => {
       </div>
       <div className="container relative z-10 mx-auto px-4 text-center">
         <h1 className="font-headline text-5xl font-bold tracking-tight text-primary sm:text-6xl md:text-7xl lg:text-8xl">
-          Elevate your
+          Eleve sua
           <br className="md:hidden" />
-          <span className="font-code text-accent"> presence</span>
+          <span className="font-code text-accent"> presença</span>
         </h1>
         <p className="mt-6 max-w-2xl mx-auto text-lg text-primary/80 md:text-xl">
-          We build stunning, high-performance websites that build trust and drive results for your business.
+          Construímos sites deslumbrantes e de alto desempenho que geram confiança e impulsionam resultados para o seu negócio.
         </p>
         <div className="mt-10">
           <Button asChild size="lg">
-            <Link href="#projects">View Projects</Link>
+            <Link href="#projects">Ver Projetos</Link>
           </Button>
         </div>
       </div>

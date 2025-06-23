@@ -22,7 +22,7 @@ export default function Header() {
         </nav>
         <Button asChild size="sm">
           <Link href="#contact">
-            Start
+            Começar
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>

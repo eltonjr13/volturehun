@@ -4,26 +4,26 @@ import Image from "next/image";
 
 const projectsData = [
   {
-    title: "E-commerce Platform",
-    goal: "Increase online sales and streamline the checkout process.",
-    solution: "A custom Shopify theme with a focus on mobile-first UX and fast performance.",
-    result: "Achieved a 40% increase in conversion rates and reduced cart abandonment.",
+    title: "Plataforma de E-commerce",
+    goal: "Aumentar as vendas online e otimizar o processo de checkout.",
+    solution: "Um tema Shopify personalizado com foco em UX mobile-first e desempenho rápido.",
+    result: "Alcançou um aumento de 40% nas taxas de conversão e reduziu o abandono de carrinho.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "ecommerce website"
   },
   {
-    title: "SaaS Landing Page",
-    goal: "Drive sign-ups for a new software product.",
-    solution: "A compelling, single-page design with clear CTAs and interactive demos.",
-    result: "Generated over 10,000 sign-ups in the first month post-launch.",
+    title: "Página de Destino SaaS",
+    goal: "Impulsionar as inscrições para um novo produto de software.",
+    solution: "Um design de página única atraente com CTAs claros e demonstrações interativas.",
+    result: "Gerou mais de 10.000 inscrições no primeiro mês após o lançamento.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "saas dashboard"
   },
   {
-    title: "Creative Portfolio",
-    goal: "Showcase the work of a world-renowned photographer.",
-    solution: "A minimal, image-forward website with elegant animations and gallery features.",
-    result: "Praised for its artistry, winning multiple design awards.",
+    title: "Portfólio Criativo",
+    goal: "Apresentar o trabalho de um fotógrafo de renome mundial.",
+    solution: "Um site minimalista, focado em imagens, com animações elegantes e recursos de galeria.",
+    result: "Elogiado por sua arte, ganhando vários prêmios de design.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "photography portfolio"
   },
@@ -35,10 +35,10 @@ export default function Projects() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            Our Featured Projects
+            Nossos Projetos em Destaque
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            We transform ideas into exceptional digital experiences.
+            Transformamos ideias em experiências digitais excepcionais.
           </p>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -57,20 +57,20 @@ export default function Projects() {
               </CardHeader>
               <CardContent className="flex-grow space-y-4">
                 <div>
-                  <h3 className="font-bold text-sm">Goal</h3>
+                  <h3 className="font-bold text-sm">Meta</h3>
                   <p className="text-muted-foreground text-sm">{project.goal}</p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-sm">Solution</h3>
+                  <h3 className="font-bold text-sm">Solução</h3>
                   <p className="text-muted-foreground text-sm">{project.solution}</p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-sm">Result</h3>
+                  <h3 className="font-bold text-sm">Resultado</h3>
                   <p className="text-muted-foreground text-sm">{project.result}</p>
                 </div>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" className="w-full">View Project</Button>
+                <Button variant="outline" className="w-full">Ver Projeto</Button>
               </CardFooter>
             </Card>
           ))}

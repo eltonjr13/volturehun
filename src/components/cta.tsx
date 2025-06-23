@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, Twitter } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 import { Icons } from "./icons";
 import Link from "next/link";
 
@@ -34,9 +34,6 @@ export default function Cta() {
             </Link>
             <Link href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
               <Linkedin className="h-6 w-6" />
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Twitter">
-              <Twitter className="h-6 w-6" />
             </Link>
           </div>
         </div>

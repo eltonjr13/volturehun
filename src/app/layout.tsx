@@ -19,7 +19,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=PT+Sans:wght@400&family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased bg-gradient-to-b from-background to-white text-foreground dark:from-background dark:to-black">
+      <body className="font-body antialiased bg-gradient-to-b from-background to-white text-foreground dark:from-background dark:to-black" suppressHydrationWarning>
         {children}
         <Toaster />
       </body>

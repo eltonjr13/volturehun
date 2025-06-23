@@ -6,7 +6,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Hero = () => {
   const [text] = useTypewriter({
-    words: ['autoridade digital', 'clínica desejada', 'marca confiável', 'referência online', 'presença imbatível'],
+    words: ['autoridade digital', 'clínica desejada', 'marca confiável', 'potência no digital', 'presença imbatível'],
     loop: 0, // Loop infinitely
     typeSpeed: 120,
     deleteSpeed: 80,

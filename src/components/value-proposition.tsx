@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { ShieldCheck, TrendingUp, Zap } from "lucide-react";
+import { ShieldCheck, TrendingUp, Zap, SearchCheck, Trophy, LayoutDashboard } from "lucide-react";
 import { GlowingEffect } from "./ui/glowing-effect";
 
 const benefits = [
@@ -17,6 +17,21 @@ const benefits = [
     icon: <Zap className="h-10 w-10 text-accent" />,
     title: "Garanta Alto Desempenho",
     description: "Tempos de carregamento rápidos e uma experiência perfeita mantêm os usuários engajados e felizes.",
+  },
+  {
+    icon: <SearchCheck className="h-10 w-10 text-accent" />,
+    title: "Melhore seu SEO",
+    description: "Sites bem estruturados com código limpo e performance otimizada têm melhor posicionamento no Google.",
+  },
+  {
+    icon: <Trophy className="h-10 w-10 text-accent" />,
+    title: "Aumente sua Autoridade",
+    description: "Uma presença digital profissional destaca seu negócio como referência no mercado.",
+  },
+  {
+    icon: <LayoutDashboard className="h-10 w-10 text-accent" />,
+    title: "Facilite a Navegação",
+    description: "Uma estrutura clara e intuitiva melhora a experiência do usuário e reduz a taxa de rejeição.",
   },
 ];
 

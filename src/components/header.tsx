@@ -1,32 +1,33 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Home, Briefcase, Mail } from "lucide-react";
-import Link from "next/link";
+'use client';
 
-export default function Header() {
+import Link from 'next/link';
+import { Home, Briefcase, Mail } from 'lucide-react';
+import { cn } from '@/lib/utils';
+
+const navItems = [
+  { href: '#home', label: 'Início', icon: Home },
+  { href: '#projects', label: 'Projetos', icon: Briefcase },
+  { href: '#contact', label: 'Contato', icon: Mail },
+];
+
+export default function DockNav() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/60 backdrop-blur">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="font-code text-2xl font-bold tracking-tighter">
-          Volture
-        </Link>
-        <nav className="hidden items-center space-x-6 md:flex">
-          <Link href="#home" className="text-foreground/70 transition-colors hover:text-accent" aria-label="Home">
-            <Home className="h-5 w-5" />
+    <nav className="fixed bottom-4 left-1/2 z-50 -translate-x-1/2 rounded-full border border-white/10 bg-neutral-900/70 px-6 py-3 shadow-lg backdrop-blur-md">
+      <div className="flex items-center gap-x-8">
+        {navItems.map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            className={cn(
+              'flex flex-col items-center gap-1 text-xs text-neutral-400 transition-colors hover:text-accent',
+            )}
+            aria-label={item.label}
+          >
+            <item.icon className="h-5 w-5" />
+            <span className="hidden sm:inline">{item.label}</span>
           </Link>
-          <Link href="#projects" className="text-foreground/70 transition-colors hover:text-accent" aria-label="Projects">
-            <Briefcase className="h-5 w-5" />
-          </Link>
-          <Link href="#contact" className="text-foreground/70 transition-colors hover:text-accent" aria-label="Contact">
-            <Mail className="h-5 w-5" />
-          </Link>
-        </nav>
-        <Button asChild size="sm">
-          <Link href="#contact">
-            Começar
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
+        ))}
       </div>
-    </header>
+    </nav>
   );
 }

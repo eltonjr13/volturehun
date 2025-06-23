@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { GradientButton } from "@/components/ui/gradient-button";
 import Link from "next/link";
 
 const Hero = () => {
@@ -20,9 +20,9 @@ const Hero = () => {
           Construímos sites deslumbrantes e de alto desempenho que geram confiança e impulsionam resultados para o seu negócio.
         </p>
         <div className="mt-10">
-          <Button asChild size="lg">
+          <GradientButton asChild>
             <Link href="#projects">Ver Projetos</Link>
-          </Button>
+          </GradientButton>
         </div>
       </div>
     </section>

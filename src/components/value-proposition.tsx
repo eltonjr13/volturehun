@@ -1,6 +1,5 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { ShieldCheck, TrendingUp, Zap, SearchCheck, Trophy, LayoutDashboard } from "lucide-react";
-import { GlowingEffect } from "./ui/glowing-effect";
 
 const benefits = [
   {
@@ -49,23 +48,16 @@ export default function ValueProposition() {
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {benefits.map((benefit) => (
-            <div key={benefit.title} className="relative rounded-lg">
-              <GlowingEffect
-                spread={30}
-                glow={true}
-                disabled={false}
-                proximity={48}
-                inactiveZone={0.2}
-                borderWidth={1}
-              />
-              <Card className="text-center bg-card shadow-lg h-full">
-                <CardHeader className="items-center p-8">
-                  {benefit.icon}
-                  <CardTitle className="mt-4 font-headline">{benefit.title}</CardTitle>
-                  <CardDescription className="mt-2">{benefit.description}</CardDescription>
-                </CardHeader>
-              </Card>
-            </div>
+            <Card 
+              key={benefit.title} 
+              className="text-center bg-card shadow-lg h-full transition-all duration-300 ease-out hover:border-2 hover:border-orange-500 hover:ring-2 hover:ring-orange-500/75 hover:shadow-xl hover:shadow-orange-500/50"
+            >
+              <CardHeader className="items-center p-8">
+                {benefit.icon}
+                <CardTitle className="mt-4 font-headline">{benefit.title}</CardTitle>
+                <CardDescription className="mt-2">{benefit.description}</CardDescription>
+              </CardHeader>
+            </Card>
           ))}
         </div>
       </div>

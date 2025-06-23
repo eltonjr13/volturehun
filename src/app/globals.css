@@ -208,7 +208,7 @@
     --color-2: hsl(333, 85%, 65%);
     --color-3: hsl(25, 98%, 58%);
     --color-4: hsl(34, 100%, 70%);
-    --color-5: hsl(var(--secondary));
+    --color-5: hsl(34, 100%, 75%);
     --border-angle: 190deg;
     --border-color-1: hsla(266, 95%, 75%, 0.2);
     --border-color-2: hsla(266, 95%, 75%, 0.7);

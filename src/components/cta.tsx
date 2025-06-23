@@ -8,12 +8,12 @@ export default function Cta() {
     <section id="contact" className="py-16 sm:py-24 border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-          Vamos construir juntos sua
+          Vamos construir a presença digital
           <br className="sm:hidden" />
-          <span className="font-code text-accent"> presença online</span>.
+          <span className="font-code text-accent"> da sua clínica</span>.
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-          Pronto para elevar sua marca? Entre em contato e vamos discutir seu projeto.
+          Pronto para transformar seu site em uma vitrine de autoridade e confiança?
         </p>
         <div className="mt-10">
           <Button asChild size="lg">

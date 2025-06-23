@@ -4,28 +4,28 @@ import Image from "next/image";
 
 const projectsData = [
   {
-    title: "Plataforma de E-commerce",
-    goal: "Aumentar as vendas online e otimizar o processo de checkout.",
-    solution: "Um tema Shopify personalizado com foco em UX mobile-first e desempenho rápido.",
-    result: "Alcançou um aumento de 40% nas taxas de conversão e reduziu o abandono de carrinho.",
+    title: "Clínica Odontológica Premium",
+    goal: "Aumentar os agendamentos e valorizar o posicionamento premium da clínica.",
+    solution: "Site institucional elegante, com integração de WhatsApp, SEO local e portfólio de sorrisos.",
+    result: "Dobro de agendamentos online em menos de 60 dias.",
     imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "ecommerce website"
+    imageHint: "dental clinic"
   },
   {
-    title: "Página de Destino SaaS",
-    goal: "Impulsionar as inscrições para um novo produto de software.",
-    solution: "Um design de página única atraente com CTAs claros e demonstrações interativas.",
-    result: "Gerou mais de 10.000 inscrições no primeiro mês após o lançamento.",
+    title: "Clínica de Estética Avançada",
+    goal: "Posicionar-se como referência em procedimentos não invasivos.",
+    solution: "Página com agendamento integrado, depoimentos de pacientes e blog educativo.",
+    result: "Aumento de 45% nos contatos via site e destaque em buscas regionais.",
     imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "saas dashboard"
+    imageHint: "aesthetics clinic"
   },
   {
-    title: "Portfólio Criativo",
-    goal: "Apresentar o trabalho de um fotógrafo de renome mundial.",
-    solution: "Um site minimalista, focado em imagens, com animações elegantes e recursos de galeria.",
-    result: "Elogiado por sua arte, ganhando vários prêmios de design.",
+    title: "Consultório Médico Multiprofissional",
+    goal: "Reunir todas as especialidades em uma experiência clara e organizada.",
+    solution: "Design modular, bios profissionais, agenda online e integração com mapa.",
+    result: "Mais visibilidade e menor taxa de desistência em agendamentos.",
     imageUrl: "https://placehold.co/600x400.png",
-    imageHint: "photography portfolio"
+    imageHint: "medical office"
   },
 ];
 
@@ -38,7 +38,7 @@ export default function Projects() {
             Nossos Projetos em Destaque
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Transformamos ideias em experiências digitais excepcionais.
+            Transformamos clínicas e profissionais da saúde em marcas de autoridade online.
           </p>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

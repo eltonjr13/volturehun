@@ -18,12 +18,12 @@ const Hero = () => {
       </div>
       <div className="container relative z-10 mx-auto px-4 text-center">
         <h1 className="font-headline text-5xl font-bold tracking-tight text-primary sm:text-6xl md:text-7xl lg:text-8xl">
-          Eleve sua
+          Transforme sua clínica em
           <br className="md:hidden" />
-          <span className="font-code text-accent"> presença</span>
+          <span className="font-code text-accent"> referência online</span>
         </h1>
-        <p className="mt-6 max-w-2xl mx-auto text-lg text-primary/80 md:text-xl">
-          Construímos sites deslumbrantes e de alto desempenho que geram confiança e impulsionam resultados para o seu negócio.
+        <p className="mt-6 max-w-3xl mx-auto text-lg text-primary/80 md:text-xl">
+          Criamos sites elegantes, rápidos e otimizados que aumentam a confiança dos pacientes e destacam sua autoridade no setor da saúde.
         </p>
         <div className="mt-10">
           <GradientButton asChild>

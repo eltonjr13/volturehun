@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import { animate } from 'motion';
-import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import { Button } from './button';
 import Link from 'next/link';
@@ -126,14 +126,14 @@ function CarouselControl({ onArrowClick }: { onArrowClick: (direction: 'left' | 
         className="absolute left-0 sm:-left-16 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/50 text-white hover:bg-black/75 transition-colors"
         aria-label="Previous slide"
       >
-        <IconChevronLeft size={32}/>
+        <ChevronLeft size={32}/>
       </button>
       <button
         onClick={() => onArrowClick('right')}
         className="absolute right-0 sm:-right-16 top-1/2 -translate-y-1/2 z-20 p-2 rounded-full bg-black/50 text-white hover:bg-black/75 transition-colors"
         aria-label="Next slide"
       >
-        <IconChevronRight size={32}/>
+        <ChevronRight size={32}/>
       </button>
     </>
   );

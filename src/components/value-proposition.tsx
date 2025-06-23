@@ -37,7 +37,7 @@ const benefits = [
 
 export default function ValueProposition() {
   return (
-    <section className="py-16 sm:py-24 bg-card/50">
+    <section id="about" className="py-16 sm:py-24 bg-card/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">

@@ -1,12 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { Home, Briefcase, Mail } from 'lucide-react';
+import { Home, Briefcase, Mail, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useEffect, useState, useRef } from 'react';
 
 const navItems = [
   { href: '#home', label: 'Início', icon: Home },
+  { href: '#about', label: 'Benefícios', icon: Sparkles },
   { href: '#projects', label: 'Projetos', icon: Briefcase },
   { href: '#contact', label: 'Contato', icon: Mail },
 ];

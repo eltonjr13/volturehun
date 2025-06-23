@@ -1,33 +1,29 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from "next/image";
+import { Carousel, type SlideData } from "@/components/ui/carousel";
 
 const projectsData = [
   {
     title: "Clínica Odontológica Premium",
-    goal: "Aumentar os agendamentos e valorizar o posicionamento premium da clínica.",
-    solution: "Site institucional elegante, com integração de WhatsApp, SEO local e portfólio de sorrisos.",
-    result: "Dobro de agendamentos online em menos de 60 dias.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "dental clinic"
   },
   {
     title: "Clínica de Estética Avançada",
-    goal: "Posicionar-se como referência em procedimentos não invasivos.",
-    solution: "Página com agendamento integrado, depoimentos de pacientes e blog educativo.",
-    result: "Aumento de 45% nos contatos via site e destaque em buscas regionais.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "aesthetics clinic"
   },
   {
     title: "Consultório Médico Multiprofissional",
-    goal: "Reunir todas as especialidades em uma experiência clara e organizada.",
-    solution: "Design modular, bios profissionais, agenda online e integração com mapa.",
-    result: "Mais visibilidade e menor taxa de desistência em agendamentos.",
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "medical office"
   },
 ];
+
+const projectSlides: SlideData[] = projectsData.map(p => ({
+  title: p.title,
+  src: p.imageUrl,
+  button: "Ver Projeto",
+  imageHint: p.imageHint,
+}));
 
 export default function Projects() {
   return (
@@ -41,39 +37,10 @@ export default function Projects() {
             Transformamos clínicas e profissionais da saúde em marcas de autoridade online.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {projectsData.map((project) => (
-            <Card key={project.title} className="overflow-hidden bg-card shadow-lg flex flex-col transition-all duration-300 hover:scale-105">
-              <Image
-                src={project.imageUrl}
-                alt={project.title}
-                width={600}
-                height={400}
-                className="w-full h-48 object-cover"
-                data-ai-hint={project.imageHint}
-              />
-              <CardHeader>
-                <CardTitle className="font-headline">{project.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="flex-grow space-y-4">
-                <div>
-                  <h3 className="font-bold text-sm">Meta</h3>
-                  <p className="text-muted-foreground text-sm">{project.goal}</p>
-                </div>
-                <div>
-                  <h3 className="font-bold text-sm">Solução</h3>
-                  <p className="text-muted-foreground text-sm">{project.solution}</p>
-                </div>
-                <div>
-                  <h3 className="font-bold text-sm">Resultado</h3>
-                  <p className="text-muted-foreground text-sm">{project.result}</p>
-                </div>
-              </CardContent>
-              <CardFooter>
-                <Button variant="outline" className="w-full">Ver Projeto</Button>
-              </CardFooter>
-            </Card>
-          ))}
+        <div className="w-full overflow-hidden py-12">
+          <div className="relative mx-auto h-[50vmin] w-full sm:h-[70vmin] sm:w-[70vmin]">
+            <Carousel slides={projectSlides} />
+          </div>
         </div>
       </div>
     </section>

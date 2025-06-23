@@ -91,31 +91,31 @@
 
   @property --color-1 {
     syntax: '<color>';
-    initial-value: hsl(34 100% 65.1%);
+    initial-value: hsl(266, 93%, 65%);
     inherits: false;
   }
 
   @property --color-2 {
     syntax: '<color>';
-    initial-value: hsl(34 100% 55%);
+    initial-value: hsl(333, 82%, 61%);
     inherits: false;
   }
 
   @property --color-3 {
     syntax: '<color>';
-    initial-value: hsl(30 90% 50%);
+    initial-value: hsl(25, 95%, 53%);
     inherits: false;
   }
 
   @property --color-4 {
     syntax: '<color>';
-    initial-value: hsl(20 80% 45%);
+    initial-value: hsl(34, 100%, 65%);
     inherits: false;
   }
 
   @property --color-5 {
     syntax: '<color>';
-    initial-value: hsl(240 4.8% 95.9%);
+    initial-value: hsl(34, 100%, 75%);
     inherits: false;
   }
 
@@ -204,14 +204,14 @@
     --pos-y: 91.51%;
     --spread-x: 120.24%;
     --spread-y: 103.18%;
-    --color-1: hsl(34 100% 70%);
-    --color-2: hsl(var(--accent));
-    --color-3: hsl(34 100% 55%);
-    --color-4: hsl(30 90% 50%);
+    --color-1: hsl(266, 95%, 75%);
+    --color-2: hsl(333, 85%, 65%);
+    --color-3: hsl(25, 98%, 58%);
+    --color-4: hsl(34, 100%, 70%);
     --color-5: hsl(var(--secondary));
     --border-angle: 190deg;
-    --border-color-1: hsla(34, 100%, 70%, 0.2);
-    --border-color-2: hsla(34, 100%, 70%, 0.7);
+    --border-color-1: hsla(266, 95%, 75%, 0.2);
+    --border-color-2: hsla(266, 95%, 75%, 0.7);
     --stop-1: 0%;
     --stop-2: 8.8%;
     --stop-3: 21.44%;

@@ -12,17 +12,23 @@ const navItems = [
 ];
 
 export default function Header() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const lastScrollY = useRef(0);
 
   const controlNavbar = () => {
     if (typeof window !== 'undefined') {
-      if (window.scrollY > lastScrollY.current && window.scrollY > 100) {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY <= 100) {
         setIsVisible(false);
       } else {
-        setIsVisible(true);
+        if (currentScrollY > lastScrollY.current) {
+          setIsVisible(false);
+        } else {
+          setIsVisible(true);
+        }
       }
-      lastScrollY.current = window.scrollY;
+      lastScrollY.current = currentScrollY;
     }
   };
 
@@ -38,7 +44,7 @@ export default function Header() {
 
   return (
     <header className={cn(
-        "fixed top-5 left-1/2 z-50 flex -translate-x-1/2 items-center justify-center gap-4 rounded-2xl border border-white/10 bg-black/60 p-1 shadow-md backdrop-blur-sm transition-transform duration-300 ease-in-out",
+        "fixed top-5 left-1/2 z-50 flex -translate-x-1/2 items-center justify-center gap-4 rounded-lg border border-white/10 bg-black/60 p-1 py-1 shadow-md backdrop-blur-sm transition-transform duration-300 ease-in-out",
         isVisible ? "translate-y-0" : "-translate-y-24"
       )}>
       {navItems.map((item) => (

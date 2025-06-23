@@ -5,10 +5,10 @@ const Hero = () => {
   return (
     <section id="home" className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div style={{ animationDelay: '0s' }} className="absolute top-[-10%] left-[5%] w-72 h-72 bg-accent/20 rounded-full filter blur-3xl animate-blob opacity-70"></div>
-        <div style={{ animationDelay: '2s' }} className="absolute top-[10%] right-[10%] w-96 h-96 bg-primary/10 rounded-full filter blur-3xl animate-blob opacity-50"></div>
-        <div style={{ animationDelay: '4s' }} className="absolute bottom-[-5%] left-[20%] w-80 h-80 bg-accent/10 rounded-full filter blur-3xl animate-blob opacity-60"></div>
-        <div style={{ animationDelay: '1s' }} className="absolute bottom-[15%] right-[25%] w-64 h-64 bg-primary/5 rounded-full filter blur-2xl animate-blob opacity-50"></div>
+        <div className="absolute -top-20 -left-20 w-96 h-96 bg-purple-glow/30 rounded-full filter blur-3xl animate-blob-1 opacity-60"></div>
+        <div className="absolute -bottom-20 -right-10 w-96 h-96 bg-orange-glow/30 rounded-full filter blur-3xl animate-blob-2 opacity-60"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-pink-glow/20 rounded-full filter blur-2xl animate-blob-3 opacity-50"></div>
+        <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-accent/20 rounded-full filter blur-3xl animate-blob-4 opacity-50"></div>
       </div>
       <div className="container relative z-10 mx-auto px-4 text-center">
         <h1 className="font-headline text-5xl font-bold tracking-tight text-primary sm:text-6xl md:text-7xl lg:text-8xl">

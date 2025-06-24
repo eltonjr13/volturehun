@@ -8,7 +8,7 @@ const projectsData = [
   },
   {
     title: "Clínica de Estética Avançada",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "https://i.imgur.com/DgEMDdz.png",
     imageHint: "aesthetics clinic"
   },
   {

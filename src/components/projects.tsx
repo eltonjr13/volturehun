@@ -3,7 +3,7 @@ import { Carousel, type SlideData } from "@/components/ui/carousel";
 const projectsData = [
   {
     title: "Clínica Odontológica Premium",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "https://i.imgur.com/JgQLjLG.png",
     imageHint: "dental clinic"
   },
   {

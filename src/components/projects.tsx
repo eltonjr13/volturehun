@@ -13,7 +13,7 @@ const projectsData = [
   },
   {
     title: "Consultório Médico Multiprofissional",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "https://i.imgur.com/nuarhzk.png",
     imageHint: "medical office"
   },
 ];

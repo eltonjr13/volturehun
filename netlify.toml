@@ -1,0 +1,11 @@
+[[redirects]]
+  from   = "/mapsforall"
+  to     = "https://studio--lead-seeker-n5dcj.us-central1.hosted.app/"
+  status = 200
+  force  = true
+
+[[redirects]]
+  from   = "/mapsforall/*"
+  to     = "https://studio--lead-seeker-n5dcj.us-central1.hosted.app/:splat"
+  status = 200
+  force  = true

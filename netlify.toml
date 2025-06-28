@@ -1,11 +1,13 @@
-[[redirects]]
-  from   = "/mapsforall"
-  to     = "https://mapsforall.netlify.app/"
-  status = 200
-  force  = true
+[build]
+  # Ajuste o comando de build e a pasta de publicação conforme seu setup
+  command = "npm run build"
+  publish = ".next"  # se usar @netlify/plugin-nextjs
+  # ou publish = "out"   # se você exporta como estático
 
 [[redirects]]
+  # Proxy transparente de /mapsforall → mapsforall.netlify.app, preservando o basePath
   from   = "/mapsforall/*"
-  to     = "https://mapsforall.netlify.app/:splat"
+  to     = "https://mapsforall.netlify.app/mapsforall/:splat"
   status = 200
   force  = true
+  

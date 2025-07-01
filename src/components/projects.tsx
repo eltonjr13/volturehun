@@ -2,19 +2,19 @@ import { Carousel, type SlideData } from "@/components/ui/carousel";
 
 const projectsData = [
   {
-    title: "Clínica Odontológica Premium",
+    title: "Plataforma Financeira Blockchain",
     imageUrl: "https://i.imgur.com/JgQLjLG.png",
-    imageHint: "dental clinic"
+    imageHint: "blockchain finance"
   },
   {
-    title: "Clínica de Estética Avançada",
+    title: "Automação Industrial com IA",
     imageUrl: "https://i.imgur.com/DgEMDdz.png",
-    imageHint: "aesthetics clinic"
+    imageHint: "industrial automation"
   },
   {
-    title: "Consultório Médico Multiprofissional",
+    title: "Sistema de Logística Integrada",
     imageUrl: "https://i.imgur.com/nuarhzk.png",
-    imageHint: "medical office"
+    imageHint: "logistics system"
   },
 ];
 
@@ -31,10 +31,10 @@ export default function Projects() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            Nossos Projetos em Destaque
+            Casos de Sucesso em Inovação Tecnológica
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            Transformamos clínicas e profissionais da saúde em marcas de autoridade online.
+            Transformamos desafios complexos em plataformas digitais seguras, escaláveis e flexíveis.
           </p>
         </div>
         <div className="w-full overflow-hidden py-12">

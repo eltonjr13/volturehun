@@ -8,18 +8,16 @@ export default function Cta() {
     <section id="contact" className="py-16 sm:py-24 border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-          Vamos construir a presença digital
-          <br className="sm:hidden" />
-          <span className="font-code text-accent"> da sua clínica</span>.
+          Pronto para elevar sua empresa ao próximo nível tecnológico?
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-          Pronto para transformar seu site em uma vitrine de autoridade e confiança?
+          Fale com nossos especialistas em soluções de alta complexidade.
         </p>
         <div className="mt-10">
           <Button asChild size="lg">
             <Link href="mailto:hello@volture.hub">
               <Mail className="mr-2 h-5 w-5" />
-              Fale Conosco
+              Vamos Conversar
             </Link>
           </Button>
         </div>

@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Volture Hub: Presença Digital Elevada',
-  description: "Uma página inicial estilo portfólio que destaca os projetos web concluídos da agência e enfatiza o valor de ter uma presença digital bem construída e confiável.",
+  title: 'Volture Hub: Soluções Tecnológicas de Ponta',
+  description: "Da segurança blockchain à automação inteligente: soluções arquitetadas para escalar, proteger e inovar.",
 };
 
 export default function RootLayout({

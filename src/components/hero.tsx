@@ -6,7 +6,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Hero = () => {
   const [text] = useTypewriter({
-    words: ['autoridade digital', 'clínica desejada', 'marca confiável', 'potência no digital', 'presença imbatível'],
+    words: ['tecnologia de ponta', 'segurança blockchain', 'automação com IA', 'inovação digital'],
     loop: 0, // Loop infinitely
     typeSpeed: 120,
     deleteSpeed: 80,
@@ -29,17 +29,17 @@ const Hero = () => {
       </div>
       <div className="container relative z-10 mx-auto px-4 text-center">
         <h1 className="font-headline text-5xl font-bold tracking-tight text-primary sm:text-6xl md:text-7xl lg:text-8xl">
-          Transforme sua clínica em
+          Impulsione seu negócio com
           <br className="md:hidden" />
           <span className="font-code text-accent"> {text}</span>
           <Cursor cursorStyle='_' />
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-primary/80 md:text-xl">
-          Criamos sites elegantes, rápidos e otimizados que aumentam a confiança dos pacientes e destacam sua autoridade no setor da saúde.
+          Da segurança blockchain à automação inteligente: soluções arquitetadas para escalar, proteger e inovar.
         </p>
         <div className="mt-10">
           <GradientButton asChild>
-            <Link href="#projects">Ver Projetos</Link>
+            <Link href="#projects">Conheça nossas Soluções</Link>
           </GradientButton>
         </div>
       </div>

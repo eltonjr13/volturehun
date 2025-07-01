@@ -3,7 +3,8 @@
 import { GradientButton } from "@/components/ui/gradient-button";
 import Link from "next/link";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import Image from 'next/image';
+import Beams from './Beams';
+import './Beams.css';
 
 const Hero = () => {
   const [text] = useTypewriter({
@@ -19,14 +20,15 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
       >
-        <Image
-            src="https://placehold.co/1920x1080.png"
-            alt="A stylized vulture integrated with dynamic, geometric shapes and abstract circuits, symbolizing innovation and digital transformation."
-            layout="fill"
-            objectFit="cover"
-            className="opacity-40"
-            data-ai-hint="cyberpunk vulture"
-            priority
+        <Beams
+          beamWidth={2}
+          beamHeight={15}
+          beamNumber={12}
+          lightColor="#ffffff"
+          speed={2}
+          noiseIntensity={1.75}
+          scale={0.2}
+          rotation={0}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
       </div>

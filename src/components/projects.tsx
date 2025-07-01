@@ -3,7 +3,7 @@ import { Carousel, type SlideData } from "@/components/ui/carousel";
 const projectsData = [
   {
     title: "Plataforma Financeira Blockchain",
-    imageUrl: "https://i.imgur.com/JgQLjLG.png",
+    imageUrl: "https://i.imgur.com/MbnYBmm.png",
     imageHint: "blockchain finance"
   },
   {

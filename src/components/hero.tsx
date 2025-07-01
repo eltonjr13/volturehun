@@ -21,14 +21,14 @@ const Hero = () => {
         className="absolute inset-0 z-0"
       >
         <Beams
-          beamWidth={2}
-          beamHeight={15}
-          beamNumber={12}
-          lightColor="#ffffff"
-          speed={2}
+          beamWidth={2.1}
+          beamHeight={25}
+          beamNumber={20}
+          lightColor="#D6B300"
+          speed={5.2}
           noiseIntensity={1.75}
           scale={0.2}
-          rotation={0}
+          rotation={30}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
       </div>

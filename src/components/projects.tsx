@@ -8,7 +8,7 @@ const projectsData = [
   },
   {
     title: "Automação Industrial com IA",
-    imageUrl: "https://i.imgur.com/DgEMDdz.png",
+    imageUrl: "https://i.imgur.com/Fq6JI5u.png",
     imageHint: "industrial automation"
   },
   {

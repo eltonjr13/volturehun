@@ -13,7 +13,7 @@ const projectsData = [
   },
   {
     title: "Sistema de Logística Integrada",
-    imageUrl: "https://i.imgur.com/nuarhzk.png",
+    imageUrl: "https://i.imgur.com/0I0yFvV.png",
     imageHint: "logistics system"
   },
 ];

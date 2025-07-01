@@ -27,7 +27,7 @@ export default function Cta() {
           </Link>
           <div className="h-6 w-px bg-border"></div>
           <div className="flex items-center space-x-4">
-            <Link href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="WhatsApp">
+            <Link href="https://wa.me/5513991331920" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="WhatsApp">
               <Icons.whatsapp className="h-6 w-6" />
             </Link>
             <Link href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
